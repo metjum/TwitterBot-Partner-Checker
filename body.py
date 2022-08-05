@@ -19,7 +19,7 @@ def make_a_tweet(api):
     # Below are the hashtags that we target now. you can add or remove hashtags to this list in the format given below
     accounts=["@Streamerbans"] 
     user=random.choice(accounts)
-    tweets = api.user_timeline(screen_name =random.choice(accounts) , count =2)
+    tweets = api.user_timeline(screen_name =random.choice(accounts) , count =5)
     
     for tweet in tweets:
         time.sleep(120)
