@@ -38,7 +38,7 @@ def make_a_tweet(api):
         url = "https://api.ivr.fi/twitch/resolve/" + names
         resp = requests.get(url)
         resp = resp.json()
-        message = names + " | ⚒ Partner: " + str(resp['partner'] + "⚒")
+        message = names + " | 🔧 Partner: " + str(resp['partner'] + "🔧")
         print(message)
         try:
             tweet.favorite()
